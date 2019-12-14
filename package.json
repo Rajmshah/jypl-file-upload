@@ -7,6 +7,7 @@
     "busboy": "latest",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "node-xlsx": "latest",
     "express-fileupload": "^0.4.0",
     "jimp": "^0.3.2",
     "lodash": "^4.17.13",
