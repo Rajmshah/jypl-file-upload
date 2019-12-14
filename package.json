@@ -1,0 +1,24 @@
+{
+  "name": "marudhar-upload",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google-cloud/storage": "latest",
+    "async": "^2.6.1",
+    "busboy": "latest",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "jimp": "^0.3.2",
+    "lodash": "^4.17.13",
+    "mongoose": "latest"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "test": "jshint app.js",
+    "ui": "grunt ui",
+    "uiprod": "grunt uiprod",
+    "build": "docker build -t abosolute-upload .",
+    "serve": "docker run -p 80:80 abosolute-upload"
+  }
+}
