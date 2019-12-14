@@ -1,5 +1,5 @@
 apps:
   - script: "app.js"
-    name: "Marudhar Cup - Port 1330"
+    name: "Jypl - Port 1330"
     watch: false
     args: "--prod --port 1330"

@@ -1,5 +1,5 @@
 {
-  "name": "marudhar-upload",
+  "name": "jypl-upload",
   "version": "1.0.0",
   "dependencies": {
     "@google-cloud/storage": "latest",
@@ -17,8 +17,6 @@
     "start": "node app.js",
     "test": "jshint app.js",
     "ui": "grunt ui",
-    "uiprod": "grunt uiprod",
-    "build": "docker build -t abosolute-upload .",
-    "serve": "docker run -p 80:80 abosolute-upload"
+    "uiprod": "grunt uiprod"
   }
 }

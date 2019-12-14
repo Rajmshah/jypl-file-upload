@@ -1,6 +1,6 @@
 server {
 	listen 80;
-	server_name fileupload.mtcmarudharcup.com;
+	server_name fileupload.jypl.in;
 	location / {
 		proxy_pass http://127.0.0.1:1330;
 		proxy_set_header Host $host;
