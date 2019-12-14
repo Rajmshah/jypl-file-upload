@@ -101,45 +101,6 @@ app.get("/api/upload/importGS/", function(req, res) {
     res.json(data);
   });
 });
-// app.post("/api/upload/", function(req, res) {
-//   if (!req.files) return res.status(400).send("No files were uploaded.");
-
-//   // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
-//   let file = req.files.file;
-//   var originalFilename = file.name;
-//   var extension = _.last(_.split(originalFilename, "."));
-//   const filename = "./upload/" + ObjectId() + "." + extension;
-//   // Use the mv() method to place the file somewhere on your server
-//   file.mv(filename, function(err) {
-//     storage
-//       .bucket(bucketName)
-//       .upload(filename, {
-//         // Support for HTTP requests made with `Accept-Encoding: gzip`
-//         gzip: true,
-//         metadata: {
-//           cacheControl: "public, max-age=31536000",
-//           public: true
-//         }
-//       })
-//       .then(data => {
-//         const fileData = data[1];
-//         var uploadObj = Upload(Upload.convertUploadObj(fileData));
-//         uploadObj.save(function(err, data) {
-//           res.json({
-//             data: [data._id],
-//             value: true
-//           });
-//           fs.unlink(filename, function() {});
-//         });
-//       })
-//       .catch(err => {
-//         res.json({
-//           error: err,
-//           value: false
-//         });
-//       });
-//   });
-// });
 
 app.get("/api/upload/readFile", function(req, res) {
   var width;
@@ -173,4 +134,5 @@ app.get("/api/upload/readFile", function(req, res) {
 app.get("/", function(req, res) {
   res.send("JYPL File Upload");
 });
+
 app.listen(1330);
