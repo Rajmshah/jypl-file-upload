@@ -187,7 +187,7 @@ var model = {
     );
   },
   importGS: function(filename, callback) {
-    console.log(filename);
+//    console.log(filename);
     async.waterfall(
       [
         function(callback) {
