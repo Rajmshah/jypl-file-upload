@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@google-cloud/storage": "latest",
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "busboy": "latest",
     "cors": "^2.8.4",
     "express": "^4.16.3",
